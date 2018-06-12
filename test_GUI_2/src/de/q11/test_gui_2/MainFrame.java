@@ -7,7 +7,7 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
 	    this.setTitle("test_GUI");
 	    this.setSize(1000, 620);
-	    this.setResizable(false);
+	    this.setResizable(true);
 	    this.setLocation(50, 50);
 	    this.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 	    this.initComponents();
@@ -20,6 +20,11 @@ public class MainFrame extends JFrame {
 		
 		panel.setLayout(new BorderLayout());
 		panelMiddle.setLayout(new GridLayout(10,10));
+		
+		
+		JLabel timer_label = new JLabel("0");
+		panel.add(timer_label, BorderLayout.NORTH);
+		MSTimer timer = new MSTimer(timer_label);
 		
 		JButton[] buttons = createField(100);
         for(JButton b:buttons){
