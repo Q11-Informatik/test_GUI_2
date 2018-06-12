@@ -3,6 +3,8 @@ package de.q11.test_gui_2;
 import java.awt.*;
 import javax.swing.*;
 
+//2D Array for Buttons
+
 public class MainFrame extends JFrame {
 	public MainFrame() {
 	    this.setTitle("test_GUI");
